@@ -1,0 +1,98 @@
+/* Genel Arka Plan ve Yazı */
+QWidget {
+    background-color: #1e1e1e;   /* koyu gri arka plan */
+    color: #e0e0e0;              /* açık gri yazı */
+    font-family: "Segoe UI", "Roboto";
+    font-size: 10pt;
+}
+
+/* Başlıklar */
+QLabel#Title {
+    color: #4dd0e1;              /* medikal mavi */
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* Butonlar */
+QPushButton {
+    background-color: #2a2a2a;
+    border: 1px solid #4dd0e1;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #e0e0e0;
+}
+
+QPushButton:hover {
+    background-color: #37474f;   /* hover için koyu mavi-gri */
+    border: 1px solid #81d4fa;
+}
+
+QPushButton:pressed {
+    background-color: #00838f;   /* tıbbi güven hissi veren teal */
+    border: 1px solid #00acc1;
+}
+
+/* Line Edit (Form Alanları) */
+QLineEdit {
+    background-color: #2a2a2a;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    padding: 4px;
+    color: #e0e0e0;
+}
+
+QLineEdit:focus {
+    border: 1px solid #4dd0e1;
+    background-color: #1c1c1c;
+}
+
+/* Tab Widget */
+QTabWidget::pane {
+    border: 1px solid #4dd0e1;
+    background: #121212;
+}
+
+QTabBar::tab {
+    background: #2a2a2a;
+    color: #b0bec5;
+    padding: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background: #00838f;
+    color: #ffffff;
+}
+
+/* Tablo (QTableView) */
+QTableView {
+    background-color: #1e1e1e;
+    gridline-color: #424242;
+    color: #e0e0e0;
+    selection-background-color: #00838f;
+    selection-color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #2a2a2a;
+    color: #81d4fa;
+    padding: 4px;
+    border: 1px solid #424242;
+}
+
+/* Scrollbar */
+QScrollBar:vertical {
+    background: #2a2a2a;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #4dd0e1;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #81d4fa;
+}
