@@ -10,3 +10,11 @@ animation->setEndValue(QPoint(120, 100));
 animation->setEasingCurve(QEasingCurve::InOutQuad);
 animation->setLoopCount(-1); // sonsuz döngü
 animation->start();
+
+
+QDeviceWatcher *watcher = new QDeviceWatcher(this);
+connect(watcher, &QDeviceWatcher::deviceAdded, this, &YourClass::onDeviceAdded);
+connect(watcher, &QDeviceWatcher::deviceRemoved, this, &YourClass::onDeviceRemoved);
+watcher->start();
+
+
