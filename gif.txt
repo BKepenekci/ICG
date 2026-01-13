@@ -1,0 +1,12 @@
+QLabel *usbLabel = new QLabel("USB anahtarı takın");
+usbLabel->setStyleSheet("color: #4dd0e1; font-size: 16pt; font-weight: bold;");
+usbLabel->setAlignment(Qt::AlignCenter);
+
+// Animasyon: yazıyı sağa sola kaydırma
+QPropertyAnimation *animation = new QPropertyAnimation(usbLabel, "pos");
+animation->setDuration(1000);
+animation->setStartValue(QPoint(100, 100));
+animation->setEndValue(QPoint(120, 100));
+animation->setEasingCurve(QEasingCurve::InOutQuad);
+animation->setLoopCount(-1); // sonsuz döngü
+animation->start();
